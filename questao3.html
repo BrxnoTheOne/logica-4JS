@@ -6,19 +6,25 @@
     <title>Document</title>
     <script>
 
-        var frutas = ["bananas"+", "+ "maças"+", "+ "uvas"+", "+ "laranjas"+", "+"melancia"];
+        var frutas = ["bananas", "maças", "uvas", "laranjas", "melancia"];
+
+        var remov_frutas = frutas(1, 1);
+
         prompt("sua lista de frutas: "+ frutas)
 
         var remover_fruta = prompt("escolha qual fruta desejar remover: ")
 
-        if (frutas.includes(remover_fruta)){
+        if (remov_frutas.includes(remover_fruta)){
 
-            document.write(frutas.includes)
+            document.write(frutas.indexOf)
         }else{
 
             document.write("fruta fora da lista")
         }
-
+        //dicas do professor:
+//         const myArray = [1, 2, 3, 4, 5];
+//  const x = myArray.splice(1, 1);
+// https://www.w3schools.com/jsref/jsref_indexof_array.asp
 
 </script>
 </head>
