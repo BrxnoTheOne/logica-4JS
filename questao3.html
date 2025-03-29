@@ -7,20 +7,24 @@
     <script>
 
         var frutas = ["bananas", "maças", "uvas", "laranjas", "melancia"];
-
-        var remov_frutas = frutas(1, 1);
-
-        prompt("sua lista de frutas: "+ frutas)
+        var org_frutas = frutas(1, 1);
+        // let text = fruitas.join(" , "); (esta comentado pois não conseguia printar com essa variavel funcionando)
+        prompt("sua lista de frutas: "+ frutas)  
 
         var remover_fruta = prompt("escolha qual fruta desejar remover: ")
+        frutas.pop(remover_fruta);
+        prompt("resultado da lista: "+ frutas)
+        
+                // parte do codigo que preciso resolver
+        // if (frutas.pop == True){
 
-        if (remov_frutas.includes(remover_fruta)){
+        //     document.write("digite outra fruta: ")
+        // }else{
 
-            document.write(frutas.indexOf)
-        }else{
+        //     document.write("fruta fora da lista")
+        // }
 
-            document.write("fruta fora da lista")
-        }
+
         //dicas do professor:
 //         const myArray = [1, 2, 3, 4, 5];
 //  const x = myArray.splice(1, 1);
@@ -36,12 +40,12 @@
 
  Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das 
  frutas.
+ Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". (parte concluida.)
 
- Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
 
- Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
 
- Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem
+Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem
 "Fruta indisponível no nosso mercado". 
 
 Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada". -->
